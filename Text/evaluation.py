@@ -7,14 +7,14 @@ import data_utils_text as dl
 
 
 LOGGING_PATH = 'check_points/log.txt'
-MODEL_PATH = 'D:\Multimodal\Text\model.ckpt' # specify your own path
+MODEL_PATH = '/path/to/model.ckpt' # specify your own path
 Embedding_PATH = 'word_embedding'
 
 flags = tf.flags
 
 # path related
-flags.DEFINE_string('load_model',           MODEL_PATH,           '(optional) filename of the model to load. Useful for re-starting training from a checkpoint')
-
+flags.DEFINE_string('load_model', MODEL_PATH, 
+                    '(optional) filename of the model to load. Useful for re-starting training from a checkpoint')
 
 # model params
 flags.DEFINE_integer('word_vocab_size', 1223, 'size of vocabulary')
@@ -23,16 +23,13 @@ flags.DEFINE_integer('highway_layers', 2, 'size of highway layers')
 flags.DEFINE_integer('word_embed_size', 300, 'embed_size')
 flags.DEFINE_string('kernels', '[2, 3, 4]', 'CNN kernel width')
 flags.DEFINE_string('kernel_features', '[100, 100, 100]', 'CNN kernel num')
-flags.DEFINE_integer('rnn_layers', 1
-                     , 'num of layers of RNN')
-
-
+flags.DEFINE_integer('rnn_layers', 1, 'num of layers of RNN')
 flags.DEFINE_integer('head_attention_layers',  2,  'num of heads of stack attention')
 flags.DEFINE_string ('trnn_size',   '[256, 256]', 'stack attention trnn size')
 flags.DEFINE_string ('trnn_layers', '[2, 2]', 'stack attention trnn layers')
 flags.DEFINE_float('dropout', 0.0, 'dropout')
-# optimization
 
+# optimization
 flags.DEFINE_integer('num_unroll_steps', 1800, 'number of timesteps to unroll for')
 flags.DEFINE_integer('batch_size', 32, 'number of sequences to train on in parallel')
 flags.DEFINE_integer('batch_size_eval', 5, 'number of sequences to evaluate in parallel at eval time')
