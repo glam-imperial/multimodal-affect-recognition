@@ -1,4 +1,4 @@
-We provide code to run the Audio experiments of our paper.
+We provide code to run the Text experiments of our paper.
 Credits go to @jiaxinchenxx [Jiaxin Chen](https://github.com/jiaxinchenxx)
 
 # Steps
