@@ -3,7 +3,7 @@
 This repository contains the code for our Information Fusion paper "End-to-end multimodal affect recognition in real-world environments".
 If you use this codebase in your experiments please cite:
 
-`Tzirakis, Panagiotis, Jiaxin Chen, Stefanos Zafeiriou, and Björn Schuller. "End-to-end multimodal affect recognition in real-world environments." Information Fusion 68 (2021): 46-53.` (https://www.sciencedirect.com/science/article/pii/S1566253520303808)
+`P., Tzirakis, J., Chen, S. Zafeiriou, and B. Schuller. "End-to-end multimodal affect recognition in real-world environments." Information Fusion 68 (2021): 46-53.` (https://www.sciencedirect.com/science/article/pii/S1566253520303808)
 
 # Content
 
